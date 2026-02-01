@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: rgb(2, 2, 29);
+    color: white;
+}
+.layout{
+    display: flex;
+    min-height: 100vh;
+}
+.sidebar,
+header,
+.products,
+.card,
+td
+{
+    background-color: rgb(21, 33, 63);
+}
+header,
+.products,
+.logout-btn,
+table,
+.card,
+th,
+td{
+    border-radius: 5px;
+}
+.sidebar{
+    width:75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    span {
+        display: none;
+    }
+}
+.sidebar:hover{
+    width:175px;
+    span{
+        display: inline-block;
+    }
+    button{
+        width: 80%;
+    }
+}
+.sidebar-list li{
+    list-style: none;
+    padding: 12px ;
+    cursor: pointer;
+}
+.img{
+    border-radius: 50%;
+    border: 3px solid white;
+    width: 50px;
+    margin-bottom: 5px;
+}
+.sidebar-list li:hover, .active
+{
+    background-color: rgba(200, 200, 200, 0.15);
+    border-radius: 15px;
+}
+.sidebar-list li span,
+.logout-btn span
+{
+    padding-left: 15px;
+}
+.logout-btn{
+    background-color: red;
+    padding: 15px;
+    cursor: pointer;
+    border: none; 
+    width: 50px;
+    align-self: center;
+    color: white;
+}
+i{
+     color: white;
+}
+.main{
+    flex: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+header,
+.products
+{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-btn,
+.products-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    box-sizing: border-box;
+}
+.card{
+   display: flex;
+   justify-content: space-around;
+   padding: 35px;
+   align-items: center;
+}
+.counts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+i,
+.numbers {
+    font-size: 1.2rem;
+}
+table{
+    border-collapse: separate;
+    border-spacing: 10px 8px;
+}
+th {
+    background: #1d4ed8;
+    text-transform: capitalize;
+}
+th, td{
+    padding: 10px;
+    text-align: center;
+}
+.price {
+  background: #16a34a;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.count {
+  background: #facc15;
+  padding: 5px 10px;
+  border-radius: 8px;
+  color: #000;
+}
+
+@media (max-width: 900px) {
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 500px) {
+    .cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

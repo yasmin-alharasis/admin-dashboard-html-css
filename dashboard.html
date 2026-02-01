@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./layout/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="layout">
+        <!-- sidebar -->
+        <aside class="sidebar">
+            <div>
+                <img src="./asset/profile-picture.jpg" alt="profile picture" class="img"/>
+                <ul class="sidebar-list">
+                    <!-- <li>
+                        <img src="./asset/profile-picture.jpg" alt="profile picture" class="img"/>
+                        <span>Mohammed</span>
+                    </li> -->
+                    <!-- Dashboard / Home -->
+                    <li class="active">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Dashboard</span>
+                    </li>
+                    <!-- Users -->
+                    <li>
+                        <i class="fa-solid fa-user-group"></i>
+                        <span>Clients</span>
+                    </li>
+                    <!-- Products / Table -->
+                    <li>
+                        <i class="fa-solid fa-table"></i>
+                        <span>Products</span>
+                    </li>
+                    <!-- Analytics / Chart -->
+                    <li>
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <span>Charts</span>
+                    </li>
+                    <!-- Posts / Edit -->
+                    <li>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <span>Posts</span>
+                    </li>
+                    <!-- Favorites / Star -->
+                    <li>
+                        <i class="fa-solid fa-star"></i>
+                        <span>Favorites</span>
+                    </li>
+                    <!-- Settings -->
+                    <li>
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Settings</span>
+                    </li>
+                </ul>
+            </div>
+            <button class="logout-btn">
+                <i class="logout-icon fa-solid fa-arrow-right-from-bracket fa-xl"></i>
+                <span>Log Out</span>
+            </button>
+        </aside>
+        <!-- main -->
+        <main class="main">
+            <!-- Headers -->
+            <header>
+                <span>Dashboard</span>
+                <button class="header-btn"><i class="fas fa-chart-bar"></i></button>
+            </header>
+            <!-- Cards -->
+            <section class="cards">
+                <div class="card">
+                    <i class="fa-solid fa-user fa-xl"></i>
+                    <div class="counts">
+                        <span>users</span>
+                        <span class="numbers">100</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-pencil fa-xl"></i>
+                    <div class="counts">
+                        <span>posts</span>
+                        <span class="numbers">34</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-table fa-xl"></i>
+                    <div class="counts">
+                        <span>products</span>
+                        <span class="numbers">654</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-dollar-sign fa-xl"></i>
+                    <div class="counts">
+                        <span>revenue</span>
+                        <span class="numbers">$134</span>
+                    </div>
+                </div>
+            </section>
+            <!-- Products -->
+            <section class="products">
+                <span>Products</span>
+                <button class="products-btn"><i class="fa fa-table"></i></button>
+            </section>
+            <!-- Table -->
+             <table>
+        <thead>
+          <tr>
+            <th>product</th>
+            <th>price</th>
+            <th>count</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>tv</td>
+            <td><span class="price">$887</span></td>
+            <td><span class="count">123</span></td>
+          </tr>
+          <tr>
+            <td>laptop</td>
+            <td><span class="price">$1267</span></td>
+            <td><span class="count">23</span></td>
+          </tr>
+          <tr>
+            <td>phone</td>
+            <td><span class="price">$267</span></td>
+            <td><span class="count">21</span></td>
+          </tr>
+          <tr>
+            <td>wash machine</td>
+            <td><span class="price">$236</span></td>
+            <td><span class="count">4</span></td>
+          </tr>
+          <tr>
+            <td>keyboard</td>
+            <td><span class="price">$12</span></td>
+            <td><span class="count">3556</span></td>
+          </tr>
+          <tr>
+            <td>tv</td>
+            <td><span class="price">$887</span></td>
+            <td><span class="count">123</span></td>
+          </tr>
+          <tr>
+            <td>laptop</td>
+            <td><span class="price">$1267</span></td>
+            <td><span class="count">23</span></td>
+          </tr>
+          <tr>
+            <td>phone</td>
+            <td><span class="price">$267</span></td>
+            <td><span class="count">21</span></td>
+          </tr>
+          <tr>
+            <td>wash machine</td>
+            <td><span class="price">$236</span></td>
+            <td><span class="count">4</span></td>
+          </tr>
+        </tbody>
+      </table>
+        </main>
+    </div>
+</body>
+</html>
