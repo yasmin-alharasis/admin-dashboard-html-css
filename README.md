@@ -32,5 +32,5 @@ analytics dashboards, and management systems.
    ```bash
    git clone https://github.com/yasmin-alharasis/admin-dashboard-html-css.git
 
-2. Run dashboard.html file 
+2. Run index.html file 
 
