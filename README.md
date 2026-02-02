@@ -5,7 +5,7 @@ The design focuses on a clean dark theme UI suitable for admin panels,
 analytics dashboards, and management systems.
 
 <p align="center">
-<a href="">View Demo</a>
+<a href="https://dark-admin-dashboard.netlify.app/">View Demo</a>
 </p>
 
 ## ✨ Features
